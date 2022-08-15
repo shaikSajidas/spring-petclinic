@@ -1,7 +1,6 @@
 # building(packaging) application
 FROM maven:3-openjdk-11 AS builder
-RUN apt install git
-RUN git clone https://github.com/shaikSajidas/spring-petclinic.git && cd spring-petclinic && mvn clean package
+RUN git clone https://github.com/spring-projects/spring-petclinic.git && cd spring-petclinic && mvn package
 
 # building application image
 FROM openjdk:11
