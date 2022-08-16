@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: spcserver
-        image: nikhatsultana/spc:1.0
+        image: sajidan/spring:latest
         ports:
         - containerPort: 8080
         
