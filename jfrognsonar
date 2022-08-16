@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Source Code') {
             steps {
-                git url: 'https://github.com/nikhatsultana639/spring-petclinic.git', 
+                git url: 'https://github.com/shaikSajidas/spring-petclinic.git', 
                 branch: 'main'
             }
 
@@ -17,8 +17,8 @@ pipeline {
                 rtMavenDeployer (
                     id: 'spc-deployer',
                     serverId: 'jfrogArtifact',
-                    releaseRepo: 'nikhat-libs-release-local',
-                    snapshotRepo: 'nikhat-libs-snapshot-local',
+                    releaseRepo: 'sajida-libs-release-local',
+                    snapshotRepo: 'sajida-libs-snapshot-local',
 
                 )
             }
